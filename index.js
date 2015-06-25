@@ -1,5 +1,6 @@
 var Request = require('zefti-request');
 
 module.exports = function(options) {
-  console.log('in zefti-remote')
+  var request = new Request(options);
+  return request;
 };
