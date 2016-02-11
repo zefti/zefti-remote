@@ -1,6 +1,7 @@
 var Request = require('zefti-request');
 
 module.exports = function(options) {
-  var request = new Request(options);
+  var dataSource = options.dataSource
+  var request = new Request(dataSource);
   return request;
 };
